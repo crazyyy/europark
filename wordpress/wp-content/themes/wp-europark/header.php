@@ -5,8 +5,6 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Главная</title>
-  <!-- Bootstrap -->
   <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
 
   <link href="http://www.google-analytics.com/" rel="dns-prefetch"><!-- dns prefetch -->
@@ -114,4 +112,3 @@
       </div>
     </header>
     <!--  END Header & Menu  -->
-    <!--  Page Content, class footer-fixed if footer is fixed  -->
