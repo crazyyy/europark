@@ -1,14 +1,13 @@
-@import 'bootstrap/bootstrap.min';
-@import 'bootstrap/bootstrap-theme.min';
+@import 'bootstrap.min';
+@import 'bootstrap-theme.min';
 @import 'style';
-@import 'fonts/font-awesome.min';
-@import 'fonts/ionicons.min';
+@import 'font-awesome.min';
+@import 'ionicons.min';
 @import 'puredesign';
 @import 'flexslider';
 @import 'owl.carousel';
-@import 'magnific-popup';
-@import 'jquery.fullPage';
-@import 'fonts/roboto';
+@import 'roboto';
+
 
 a,
 .button {
@@ -215,10 +214,10 @@ header .section-x {
 }
 
 .description {
-  min-height: 476px;
+  /* min-height: 476px; */
   padding: 30px 0;
 
-  // background: url('../img/bg_two.jpg') repeat-x scroll left (top / 398px) 100% rgba(0, 0, 0, 0);
+  background: url('../img/bg_two.jpg') repeat-x scroll left (top / 398px) 100% rgba(0, 0, 0, 0);
 }
 
 .dk-head {
