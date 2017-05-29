@@ -1,7 +1,7 @@
 <?php
-define('DB_NAME', 'DBNAME');
-define('DB_USER', 'DBUSER');
-define('DB_PASSWORD', 'DBPASS');
+define('DB_NAME', 'europark');
+define('DB_USER', 'europark');
+define('DB_PASSWORD', 'europark');
 
 define('DB_HOST', 'localhost');
 
