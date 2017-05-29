@@ -1,21 +1,19 @@
 @import 'bootstrap/bootstrap.min';
 @import 'bootstrap/bootstrap-theme.min';
+@import 'style';
 @import 'fonts/font-awesome.min';
 @import 'fonts/ionicons.min';
-@import 'fonts/roboto';
-@import 'style';
 @import 'puredesign';
+@import 'flexslider';
 @import 'owl.carousel';
 @import 'magnific-popup';
 @import 'jquery.fullPage';
-@import 'flexslider';
+@import 'fonts/roboto';
 
 a,
 .button {
   transition: all .2s ease 0s;
 }
-
-
 
 .uper-bold {
   font-size: 1.6vw;
@@ -220,7 +218,7 @@ header .section-x {
   min-height: 476px;
   padding: 30px 0;
 
-  background: url('../img/bg_two.jpg') repeat-x scroll left (top / 398px) 100% rgba(0, 0, 0, 0);
+  // background: url('../img/bg_two.jpg') repeat-x scroll left (top / 398px) 100% rgba(0, 0, 0, 0);
 }
 
 .dk-head {
