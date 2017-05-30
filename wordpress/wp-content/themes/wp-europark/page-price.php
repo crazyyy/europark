@@ -25,374 +25,43 @@
             <!--  Tab  -->
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">Охота</a></li>
-              <li role="presentation"><a href="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab">Рыбалка</a></li>
-              <li role="presentation"><a href="#tab-three" aria-controls="tab-three" role="tab" data-toggle="tab">База отдыха "Диканька"</a></li>
-              <li role="presentation"><a href="#tab-for" aria-controls="tab-for" role="tab" data-toggle="tab">Дополнительные услуги</a></li>
+              <?php $i=1; if( have_rows('price_catalog') ): while ( have_rows('price_catalog') ) : the_row(); ?>
+                <?php if ($i==1) { $class=' class="active"'; } else { $class=''; } ?>
+                <li role="presentation"<?php echo $class; ?>><a href="#tab-<?php echo $i; ?>" aria-controls="tab-one" role="tab" data-toggle="tab"><?php the_sub_field('price_heading'); ?></a></li>
+              <?php $i++; endwhile; endif; ?>
             </ul>
             <!--  Nav Tabs  -->
             <!-- Tab panes -->
             <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="tab-one">
-                <p>
-                  <br>
-                </p>
-                <table>
-                  <colgroup>
-                    <col>
-                      <col>
-                        <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <td class="titletr" rowspan="1" colspan="3">Прайс-лист для граждан Республики Беларусь
-                      </td>
-                    </tr>
-                    <tr class="centtd">
-                      <td>Название услуги
-                      </td>
-                      <td>Стоимость
-                      </td>
-                      <td>Примечания
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="tab-two">
-                <p>
-                  <br>
-                </p>
-                <table>
-                  <colgroup>
-                    <col>
-                      <col>
-                        <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <td class="titletr" rowspan="1" colspan="3">Прайс-лист для иностранных охотников
-                      </td>
-                    </tr>
-                    <tr class="centtd">
-                      <td>Название услуги
-                      </td>
-                      <td>Стоимость
-                      </td>
-                      <td>Примечания
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="tab-three">
-                <p>
-                  <br>
-                </p>
-                <table>
-                  <colgroup>
-                    <col>
-                      <col>
-                        <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <td class="titletr" rowspan="1" colspan="3">Прайс-лист для иностранных охотников
-                      </td>
-                    </tr>
-                    <tr class="centtd">
-                      <td>Название услуги
-                      </td>
-                      <td>Стоимость
-                      </td>
-                      <td>Примечания
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="tab-for">
-                <p>
-                  <br>
-                </p>
-                <table>
-                  <colgroup>
-                    <col>
-                      <col>
-                        <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <td class="titletr" rowspan="1" colspan="3">Прайс-лист для иностранных охотников
-                      </td>
-                    </tr>
-                    <tr class="centtd">
-                      <td>Название услуги
-                      </td>
-                      <td>Стоимость
-                      </td>
-                      <td>Примечания
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Путевка на платное любительское рыболовство
-                      </td>
-                      <td>15 евро
-                      </td>
-                      <td>за 1 сутки до 10 ставок
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Подготовка места проведения рыбалки
-                      </td>
-                      <td>10 евро
-                      </td>
-                      <td>за 1 сутки
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <?php $i=1; if( have_rows('price_catalog') ): while ( have_rows('price_catalog') ) : the_row(); ?>
+                <?php if ($i==1) { $class='active'; } else { $class=''; } ?>
+                <div role="tabpanel" class="tab-pane <?php echo $class; ?>" id="tab-<?php echo $i; ?>">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="titletr" rowspan="1" colspan="3"><?php the_sub_field('price_subheading'); ?></td>
+                      </tr>
+                      <tr class="centtd">
+                        <td>Название услуги
+                        </td>
+                        <td>Стоимость
+                        </td>
+                        <td>Примечания
+                        </td>
+                      </tr>
+
+                      <?php if( have_rows('price_table') ): while( have_rows('price_table') ): the_row(); ?>
+                        <tr>
+                          <td><?php the_sub_field('title'); ?></td>
+                          <td><?php the_sub_field('price'); ?></td>
+                          <td><?php the_sub_field('comments'); ?></td>
+                        </tr>
+                      <?php endwhile; endif;  ?>
+                    </tbody>
+                  </table>
+                </div>
+              <?php $i++; endwhile; endif; ?>
+
             </div>
             <!-- Tab panes -->
             <!--  Tab  -->
