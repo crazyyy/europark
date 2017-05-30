@@ -1,701 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Рыбалка</title>
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-theme.min.css">
-
-        <!-- Custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" href="assets/css/ionicons.min.css">
-        
-        <link rel="stylesheet" href="assets/css/puredesign.css">
-        
-        <!-- Flexslider -->
-        <link rel="stylesheet" href="assets/css/flexslider.css">
-        
-        <!-- Owl -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">
-        
-        <!-- Magnific Popup -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        
-        <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Рыбалка</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-theme.min.css">
+  <!-- Custom css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/puredesign.css">
+  <!-- Flexslider -->
+  <link rel="stylesheet" href="assets/css/flexslider.css">
+  <!-- Owl -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        
-         
-                  <link rel="stylesheet" href="assets/fonts/roboto/roboto.css">
-    </head>
-    <body>
-      
-        <!--  loader  -->
-        <div id="myloader">
-            <span class="loader">
+  <link rel="stylesheet" href="assets/fonts/roboto/roboto.css">
+</head>
+
+<body>
+  <!--  loader  -->
+  <div id="myloader">
+    <span class="loader">
                 <div class="inner-loader"></div>
             </span>
-        </div>
-        
-        <!--  Main Wrap  -->
-        <div id="main-wrap" class="full-width">
-            <!--  Header & Menu  -->
-            <header id="header" class="fixed transparent full-width">
-                <div class="container">
-                    <nav class="navbar navbar-default white">
-                        <!--  Header Logo  -->
-                        <div id="logo">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/img/logo.png" class="normal" alt="logo">
-                                <img src="assets/img/logo@2x.png" class="retina" alt="logo">
-                                <img src="assets/img/logo_white.png" class="normal white-logo" alt="logo">
-                                <img src="assets/img/logo_white@2x.png" class="retina white-logo" alt="logo">
-                            </a>
-                        </div>
-                        <!--  END Header Logo  -->
-                        <!--  Classic menu, responsive menu classic  -->
-                     <div id="menu-classic">
-                            <div class="menu-holder">
-                                <ul>
-                                    <li class="submenu"><a href="/index.html" class="active-item">Главная</a></li>
-                                    <li class="submenu"> <a href="/hunting.html">Охота</a> </li>
-                                       <li class="submenu"> <a href="/fishing.html">Рыбалка</a> </li>
-                                       <li class="submenu"> <a href="/about-the-base.html">База отдыха</a> </li>
-                                       <li class="submenu"> <a href="/about-us.html">О нас</a> </li>
-                                        <li class="submenu"> <a href="/gallery-filters.html">Галерея</a> </li>
-                                        <li class="submenu"> <a href="/price.html">Прайс</a> </li>
-                                         <li class="submenu"> <a href="/contact-1.html">Контакты</a> </li>
-                                         
-                                         
-                                        
-
-
-
-
-
-
-
-                                         
-                                         
-                                         
-                                                                           
-                                                                           
-                                                                           
-                                                                           
-                             
-                                    
-                             
-                             
-                                
-                                    <!-- Search Icon -->
-                              
-                                </ul>
-                            </div>
-                        </div>
-                        <!--  END Classic menu, responsive menu classic  -->
-                        <!--  Button for Responsive Menu Classic  -->
-                        <div id="menu-responsive-classic">
-                            <div class="menu-button">
-                                <span class="bar bar-1"></span>
-                                <span class="bar bar-2"></span>
-                                <span class="bar bar-3"></span>
-                            </div>
-                        </div>
-                        <!--  END Button for Responsive Menu Classic  -->
-                        <!--  Search Box  -->
-                        <div id="search-box" class="full-width">
-                            <form role="search" id="search-form" class="black big">
-                                <div class="form-input">
-                                    <input class="form-field black big" type="search" placeholder="Search...">
-                                    <span class="form-button big">
+  </div>
+  <!--  Main Wrap  -->
+  <div id="main-wrap" class="full-width">
+    <!--  Header & Menu  -->
+    <header id="header" class="fixed transparent full-width">
+      <div class="container">
+        <nav class="navbar navbar-default white">
+          <!--  Header Logo  -->
+          <div id="logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/logo.png" class="normal" alt="logo">
+              <img src="assets/img/logo@2x.png" class="retina" alt="logo">
+              <img src="assets/img/logo_white.png" class="normal white-logo" alt="logo">
+              <img src="assets/img/logo_white@2x.png" class="retina white-logo" alt="logo">
+            </a>
+          </div>
+          <!--  END Header Logo  -->
+          <!--  Classic menu, responsive menu classic  -->
+          <div id="menu-classic">
+            <div class="menu-holder">
+              <ul>
+                <li class="submenu"><a href="/index.html" class="active-item">Главная</a></li>
+                <li class="submenu"> <a href="/hunting.html">Охота</a> </li>
+                <li class="submenu"> <a href="/fishing.html">Рыбалка</a> </li>
+                <li class="submenu"> <a href="/about-the-base.html">База отдыха</a> </li>
+                <li class="submenu"> <a href="/about-us.html">О нас</a> </li>
+                <li class="submenu"> <a href="/gallery-filters.html">Галерея</a> </li>
+                <li class="submenu"> <a href="/price.html">Прайс</a> </li>
+                <li class="submenu"> <a href="/contact-1.html">Контакты</a> </li>
+                <!-- Search Icon -->
+              </ul>
+            </div>
+          </div>
+          <!--  END Classic menu, responsive menu classic  -->
+          <!--  Button for Responsive Menu Classic  -->
+          <div id="menu-responsive-classic">
+            <div class="menu-button">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+            </div>
+          </div>
+          <!--  END Button for Responsive Menu Classic  -->
+          <!--  Search Box  -->
+          <div id="search-box" class="full-width">
+            <form role="search" id="search-form" class="black big">
+              <div class="form-input">
+                <input class="form-field black big" type="search" placeholder="Search...">
+                <span class="form-button big">
                                         <button type="button">
                                             <i class="icon ion-ios-search"></i>
                                         </button>
                                     </span>
-                                </div>
-                            </form>
-                            <button class="close-search-box">
-                                <i class="icon ion-ios-close-empty"></i>
-                            </button>
-                        </div>
-                        <!--  END Search Box  -->
-                    </nav>
-                </div>
-            </header>
-            <!--  END Header & Menu  -->
-            
-            <!--  Page Content, class footer-fixed if footer is fixed  -->
-            <div id="page-content" class="header-static footer-fixed">
-                <!--  Slider  -->
-                <div id="flexslider" class="fullpage-wrap small">
-                    <ul class="slides">
-                        <li style="background-image:url(assets/img/trip3.jpg)">
-                            <div class="container text text-center">
-                                <h1 class="white margin-bottom-small inpage">РЫБАЛКА</h1>
-                                <p class="heading white inpage-two">Нижнедунайская равнина, несмотря на то, что в воскресенье некоторые станции метро закрыты, поднимает холодный действующий вулкан Катмаи.</p>
-                            </div>
-                            <div class="gradient dark"></div>
-                        </li>
-                        <ol class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li class="active">ОХОТА</li>
-                        </ol>
-                    </ul>
-                </div>
-                <!--  END Slider  -->
-                <div id="post-wrap" class="content-section fullpage-wrap">
-     
-                    <div class="row margin-leftright-null">
-                        <div class="container">
-                            <div class="col-md-12 text padding-bottom-null text-center">
-                                <h2 class="margin-bottom-null title line center"> О местах для рыбалки</h2>
-                      
-                            </div>
-                            
-                            
-                            
-                               <div class="col-lg-4 padding-leftright-null">
-                                <div data-responsive="parent-height" data-responsive-id="adv" class="lake-style">
-                            
-                                    <div class="">
-                               <img class="img1" src="/pic/lake2.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            <div class="col-lg-8 padding-leftright-null">
-                                <div data-responsive="parent-height" data-responsive-id="adv" class="text padding-lg-bottom-null text-p20">
-                               
-                                    <div class="padding-onlytop-md">
-
-<p class="bold-b">На территории хозяйства EUROPARK расположен целый каскад озер – Синьша, Волобо , Глыбо, Ведето, Ножницы, Черное, Белое, течет река Дрисса. В наших водоемах водится <b>сом, судак, щука, окунь, лещ, угорь, красноперка, плотва, язь, густера, ёрш, голавль и жерех</b>. Средняя глубина озер – 5-7 м, глубина зимовальных ям достигает 15-17 м. Берега твердые, лесистые, преобладают сосновые боры и березовые рощи. В озере Ведето водится редкая рыба селява. Озера ежегодно зарыбляются. Вода в водоемах кристально чистая и идеально подходит для <b>подводной охоты</b>.</p>
-
-<p class="bold-b">Мы оказываем целый комплекс услуг по организации и проведению рыбалки на территории хозяйства, начиная от выдачи путевок на право участия в рыбалке и заканчивая заморозкой улова. Также предусмотрено оказание дополнительных услуг для иностранных гостей.</p>
-
-<p class="bold-b bb">В хозяйстве EUROPARK можно осуществлять рыбалку:</p>
-
-<ul class="rubul" >
-<li>Летнюю и зимнюю;</li>
-<li>Речную и озерную;</li>
-<li>С лодки, с берега, подводную;</li>
-<li>Поплавочную, с донной удочкой, со спинингом, нахлыстом, жерлицей.</li>
-
-</ul>
-
-<p class="bold-b">Сроки, способы и орудия рыбалки определяются в соответствии с «Правилами охоты и рыболовства» от 26 июня 2014 года (Указ Президента РБ №551 от 25.12.2013 г.)</p>
-
-<p class="bold-b"><b>Гости EUROPARK размещаются с полным пансионом (проживание и питание) на базе отдыха ” Диканька”</b></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                         
-     
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                     
-                        </div>
-                    </div>
-                    <!-- END Description Trek -->
-                    <!-- Google map trek. Go to Google Maps, choose walking trail and share with iframe -->
-                    
-                    
-                    
-                    
-             
-                    
-                    
-                    
-                    
-                    
-                    <div class="row margin-leftright-null grey-background">
-                        <div class="bg-img overlay simple-parallax responsive" style="background-image:url(assets/img/trip2.jpg)">
-                           <div class="container">
-	                           
-	                           
-	                           <div class="col-md-12 text padding-bottom-null text-center">
-                                <h2 class="margin-bottom-null title line center color_white">Организация рыбалки</h2>
-                                <p class="heading center grey margin-bottom-null color_white">Приехав на рыбалку в EUROPARK, Вы сможете всецело отдаться любимому занятию, потому что все организационно-бытовые хлопоты мы возьмем на себя. По вашему желанию мы готовы:</p>
-                      
-                            </div>
-	                           
-	                           
-	                           
-	                           
-                               <!-- Trek data -->
-                               <div class="text trek-data text-center" id="p1">
-	                               <div class="col-md-1"></div>
-                                   <div class="col-sm-4 col-md-2">
-                                      <i class="icon ion-clipboard service white"></i>
-                                       <em class="color">Помочь в оформлении и получении путевок, разовых разрешений на право участия в рыбалке</em>
-                                     
-                                   </div>
-                                   <div class="col-sm-4 col-md-2">
-                                       <i class="icon ion-map service white"></i>
-                                       <em class="color">Подготовить места проведения рыбалки</em>
-                                      
-                                   </div>
-                                   <div class="col-sm-4 col-md-2">
-                                        <i class="icon ion-ios-paw service white"></i>
-                                       <em class="color">Оказать услуги егерской службы</em>
-                                 
-                                   </div>
-                                   <div class="col-sm-4 col-md-2">
-                                       <i class="icon ion-android-microphone service white"></i>
-                                       <em class="color">Предоставить связь</em>
-                                  
-                                   </div>
-                                   <div class="col-sm-4 col-md-2">
-                                       <i class="icon ion-android-car service white"></i>
-                                       <em class="color">Обеспечить транспортное сообщение</em>
-                                      
-                                   </div>
-                                   <div class="col-md-1"></div>
-                                   
-                                   
-                                   <div style="clear: both;"></div>
-                                   
-                                 
-                                   
-                                   
-                               </div>
-                               <!-- END Trek data -->
-                               
-                               
-                               
-                               
-                           </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    
-                    <div class="row margin-leftright-null">
-                        <div class="container">
-	                        <div class="col-md-12 text padding-bottom-null text-center">
-                                <h2 class="margin-bottom-null title line center">ПРОВЕДЕНИЕ РЫБАЛКИ</h2>
-                                
-                           <a href="#" class="add_photo calenar">Календарь</a>
-                                
-                               
-                            </div>
-	                        
-	                        
-                            <!-- About -->
-                            <div class="col-lg-6 padding-leftright-null">
-                                <div data-responsive="parent-height" data-responsive-id="adv" class="text padding-lg-bottom-null">
-                            
-                                    <div class="padding-onlytop-md">
-	                                    
-	                                    
-<p class="bold-b">Хозяйство EUROPARK предлагает рыбалку на следующие виды рыб: <b>сом, судак, щука, окунь, лещ, угорь, красноперка, плотва, язь, густера, ёрш, голавль, селява и жерех</b></p>
-
-<p class="bold-b">Отведать улов можно прямо в хозяйстве: наши профессиональные повара позаботятся о чистке и потрошении рыбы и приготовят блюда по вашему желанию. Также возможна заморозка улова для дальнейшей транспортировки.</p>
-
-
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END About -->
-                             <div class="col-lg-6 padding-leftright-null">
-                                <div data-responsive="parent-height" data-responsive-id="adv" class="text padding-lg-bottom-null">
-                            
-                                     <div class="padding-onlytop-md">
-<p style="margin-bottom: 16px!important;" class="bold-b">С целью создания идеальных условий для рыбалки, мы готовы <b>предоставить услуги квалифицированных егерей</b> и дать в аренду:</p>
-
-
-<ul class="proved">
-<li>Транспортные средства (на территории хозяйства хорошо развита дорожная сеть!):</li>
-<li class="li-left">автомобили (УАЗ);</li>
-<li class="li-left">квадроциклы;</li>
-<li class="li-left">снегоходы;</li>
-<li class="li-left">моторные лодки;</li>
-
-<li>Cпиннинги;</li>
-<li>Удочки;</li>
-<li>Радиостанции;</li>
-<li>Возможно, какие-то еще рыболовные снасти??</li>
-
-
-</ul>
-                                    </div>
-                                </div>
-                            </div>
-                          
-                        </div>
-                        
-                        
-                          <a href="#" class="show-price">Ознакомиться с прайсом</a>
-                        
-                    </div>
-                    
-                    
-                    
-                    <div class="row margin-leftright-null grey-background">
-                        <div class="container">
-                            <div class="col-md-12 text padding-bottom-null text-center">
-                                <h2 class="margin-bottom-null title line center">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
-                                <p class="heading center grey margin-bottom-null"></p>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                            </div>
-                            
-                            <div style="clear: both;"></div>
-                            
-                            
-                           <p class="dopd text"> Мы рады принимать в хозяйстве EUROPARK иностранных гостей. Нам приятно освобождать Вас от забот, связанных с приездом в другую страну и создавать для Вас максимально комфортные условия.  Поэтому мы с удовольствием берем на себя следующие организационные моменты:</p>
-                            
-                            
-                            
-                            
-                            <!-- Trek Data -->
-                            <div class="text padding-bottom-null trek-data text-center">
-                                <div class="col-sm-3 col-md-3">
-                                   <i class="icon ion-ios-printer-outline service  letsize"></i>
-                                    <em class="em1">Подготовка документов на получение визы и страховки</em>
-                                    
-                                </div>
-                         
-                                <div class="col-sm-3 col-md-3">
-                                    <i class="icon ion-ios-navigate-outline service  letsize"></i>
-                                    <em class="em1">Встреча и сопровождение (можно от границ РФ)</em>
-                                    
-                                </div>
-                                <div class="col-sm-3 col-md-3">
-                                    <i class="icon ion-ios-shuffle service  letsize"></i>
-                                    <em class="em1">Трансфер Минск (аэропорт/вокзал) — охотхозяйство — Минск (аэропорт/вокзал)</em>
-                                    
-                                </div>
-                    
-                                <div class="col-sm-3 col-md-3">
-                                    <i class="icon ion-ios-flask-outline service  letsize"></i>
-                                    <em class="em1">Услуги переводчика</em>
-                                  
-                                </div>
-                            </div>
-                            <!-- END Trek Data -->
-                            <div class="col-md-12 text">
-                                <p class="way">Кроме  выше перечисленных  услуг , мы предлагаем  эксклюзивные  программы , которые  проводят опытные охотники на  территории  наших угодий:</p>
-                                
-                                
-                                <ul class="seeul">
-	                                
-	                                
-	                              <li>Недельный курс молодого охотника с изучением  этики и культуры поведения в лесу, основ  безопасности  , поиска  и  выслеживания добычи</li>
-
-<li>Индивидуальные , групповые туры- охоты, как для начинающих охотников, так и для опытных, желающих добыть достойный трофей</li>
-
-<li>Школу лесного выживания для подростков и людей, которые просто хотят научиться ориентироваться  и выживать в  диких  природных условиях</li>
-	                                
-	                                
-	                                
-	                                
-	                                
-                                </ul>
-                                
-                                
-                                
-                                <a href="#" class="show-price">Ознакомиться с прайсом</a>
-                                
-                                
-                                
-              
-                                
-                                
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div id="page-wrap" class="content-section fullpage-wrap">
-	                    
-	                    
-	                    <div class="container">
-		                    <div class="col-md-12 text padding-bottom-null text-center mb60">
-                                <h2 class="margin-bottom-null title line center">Фотогалерея</h2>
-                                <p class="heading center grey margin-bottom-null"></p>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                            </div>
-		                    
-		                    
-	                    </div>
-	                    
-	                    
-	                    
-                    <!--  Gallery Section  -->
-                    <section id="gallery" data-isotope="load-simple">
-                        <div class="masonry-items equal four-columns" style="position: relative; height: 600px;">
-                            <!--  Lightbox trek -->
-                            <div class="one-item" style="position: absolute; left: 0px; top: 0px;">
-                                <div class="image-bg" style="background-image:url(assets/img/trip1.jpg)"></div>
-                                <div class="content figure">
-                                    <i class="pd-icon-camera"></i>
-                                    <a href="assets/img/trip1.jpg" class="link lightbox"></a>
-                                </div>
-                            </div>
-                            <!--  END Lightbox trek -->
-                            <!--  Page Trek  -->
-                            <div class="one-item" style="position: absolute; left: 476px; top: 0px;">
-                                <div class="image-bg" style="background-image:url(assets/img/trip2.jpg)"></div>
-                                <div class="content figure">
-                                    <i class="pd-icon-distance"></i>
-                                    <a href="single-trek.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!--  END Page Trek  -->
-                            <div class="one-item" style="position: absolute; left: 952px; top: 0px;">
-                                <div class="image-bg" style="background-image:url(assets/img/trip3.jpg)"></div>
-                                <div class="content figure">
-                                    <i class="pd-icon-camera"></i>
-                                    <a href="assets/img/trip3.jpg" class="link lightbox"></a>
-                                </div>
-                            </div>
-                            <div class="one-item" style="position: absolute; left: 1428px; top: 0px;">
-                                <div class="image-bg" style="background-image:url(assets/img/trip4.jpg)"></div>
-                                <div class="content figure">
-                                    <i class="pd-icon-distance"></i>
-                                    <a href="single-trek-2.html" class="link"></a>
-                                </div>
-                            </div>
-                            <div class="one-item" style="position: absolute; left: 0px; top: 300px;">
-                                <div class="image-bg" style="background-image:url(assets/img/trip5.jpg)"></div>
-                                <div class="content figure">
-                                    <i class="pd-icon-camera"></i>
-                                    <a href="assets/img/trip5.jpg" class="link lightbox"></a>
-                                </div>
-                            </div>
-                            <div class="one-item" style="position: absolute; left: 476px; top: 300px;">
-                                <div class="image-bg" style="background-image:url(assets/img/trip6.jpg)"></div>
-                                <div class="content figure">
-                                    <i class="pd-icon-camera"></i>
-                                    <a href="assets/img/trip6.jpg" class="link lightbox"></a>
-                                </div>
-                            </div>
-                            <div class="one-item" style="position: absolute; left: 952px; top: 300px;">
-                                <div class="image-bg" style="background-image:url(assets/img/trip7.jpg)"></div>
-                                <div class="content figure">
-                                    <i class="pd-icon-distance"></i>
-                                    <a href="single-trek-2.html" class="link"></a>
-                                </div>
-                            </div>
-                            <div class="one-item" style="position: absolute; left: 1428px; top: 300px;">
-                                <div class="image-bg" style="background-image:url(assets/img/trip8.jpg)"></div>
-                                <div class="content figure">
-                                    <i class="pd-icon-camera"></i>
-                                    <a href="assets/img/trip8.jpg" class="link lightbox"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!--  END Gallery Section  -->
-                </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    <div id="share">
-                        <a class="share-btn">
-                            <i class="icon ion-android-share-alt"></i>
-                        </a>
-                        <div class="share-icons" style="display:none">
-                            <a href="" class="share-google">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            </a>
-                            <a href="" class="share-twitter">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="" class="share-linkedin">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a href="" class="share-mail">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--  END Share Btn  -->
-                    <!-- Similar Trips -->
-          
-                    <!-- END Similar Trips -->
-                    <!-- Call to Action -->
-                    <div class="row text margin-leftright-null color-background">
-                        <div class="col-md-12 text-center">
-                            <h4 class="big white moby">Остались вопросы?</h4>
-                            <h4 class="big margin-bottom-small white moby1">Свяжитесь с нами <a href="" class="btn-pro simple white moby2">+375 (29) 506-47-07</a></h4>
-                            <a href="#" target="_blank" class="btn-alt small white margin-null active shadow moby3">Контакты</a>
-                        </div>
-                    </div>
-                    <!-- END Call to Action -->
-                </div>
+              </div>
+            </form>
+            <button class="close-search-box">
+              <i class="icon ion-ios-close-empty"></i>
+            </button>
+          </div>
+          <!--  END Search Box  -->
+        </nav>
+      </div>
+    </header>
+    <!--  END Header & Menu  -->
+    <!--  Page Content, class footer-fixed if footer is fixed  -->
+    <div id="page-content" class="header-static footer-fixed">
+      <!--  Slider  -->
+      <div id="flexslider" class="fullpage-wrap small">
+        <ul class="slides">
+          <li style="background-image:url(assets/img/trip3.jpg)">
+            <div class="container text text-center">
+              <h1 class="white margin-bottom-small inpage">РЫБАЛКА</h1>
+              <p class="heading white inpage-two">Нижнедунайская равнина, несмотря на то, что в воскресенье некоторые станции метро закрыты, поднимает холодный действующий вулкан Катмаи.</p>
             </div>
-            <!--  END Page Content, class footer-fixed if footer is fixed  -->
-            
-            <!--  Footer. Class fixed for fixed footer  -->
-                <footer class="fixed full-width">
-                <div class="container">
-                    <div class="row no-margin" >
-                        <div class="col-sm-4 col-md-4 padding-leftright-null">
-                            <h6 class="heading white margin-bottom-extrasmall">EUROPARK</h6>
-                            
-                            <p class="footer-p">Хозяйство расположено в краю голубых озер ― на севере Витебской области ― и граничит с территорией России.
-Угодья нашего охотничье-туристического комплекса занимают площадь в 18 тысяч гектар. Здесь лесной массив перемежается с живописными полями, болотистыми участками, поросшими камышом, и водной гладью озер и рек.</p>
-                                                   </div>
-                 
-                        <div class="col-sm-4 col-md-4 padding-leftright-null">
-                            <h6 class="heading white margin-bottom-extrasmall">Наши контакты</h6>
-                            <ul class="info">
-                                <li>Телефон: <a href=""> +375 (29) 297-61-21</a></li>
-                                <li>Почта: <a href="">europark.by@gmail.com</a></li>
-                                <li>Время работы: <span class="white">9:00 - 18:00</span><br></li>
-                                <li><a href="">Республика Беларусь, Витебская область, Россонский район, д. Демех, ул.Ольховая 11<br>
+            <div class="gradient dark"></div>
+          </li>
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">ОХОТА</li>
+          </ol>
+        </ul>
+      </div>
+      <!--  END Slider  -->
+      <div id="post-wrap" class="content-section fullpage-wrap">
+        <div class="row margin-leftright-null">
+          <div class="container">
+            <div class="col-md-12 text padding-bottom-null text-center">
+              <h2 class="margin-bottom-null title line center"> О местах для рыбалки</h2>
+            </div>
+            <div class="col-lg-4 padding-leftright-null">
+              <div data-responsive="parent-height" data-responsive-id="adv" class="lake-style">
+                <div class="">
+                  <img class="img1" src="/pic/lake2.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 padding-leftright-null">
+              <div data-responsive="parent-height" data-responsive-id="adv" class="text padding-lg-bottom-null text-p20">
+                <div class="padding-onlytop-md">
+                  <p class="bold-b">На территории хозяйства EUROPARK расположен целый каскад озер – Синьша, Волобо , Глыбо, Ведето, Ножницы, Черное, Белое, течет река Дрисса. В наших водоемах водится <b>сом, судак, щука, окунь, лещ, угорь, красноперка, плотва, язь, густера, ёрш, голавль и жерех</b>. Средняя глубина озер – 5-7 м, глубина зимовальных ям достигает 15-17 м. Берега твердые, лесистые, преобладают сосновые боры и березовые рощи. В озере Ведето водится редкая рыба селява. Озера ежегодно зарыбляются. Вода в водоемах кристально чистая и идеально подходит для <b>подводной охоты</b>.</p>
+                  <p class="bold-b">Мы оказываем целый комплекс услуг по организации и проведению рыбалки на территории хозяйства, начиная от выдачи путевок на право участия в рыбалке и заканчивая заморозкой улова. Также предусмотрено оказание дополнительных услуг для иностранных гостей.</p>
+                  <p class="bold-b bb">В хозяйстве EUROPARK можно осуществлять рыбалку:</p>
+                  <ul class="rubul">
+                    <li>Летнюю и зимнюю;</li>
+                    <li>Речную и озерную;</li>
+                    <li>С лодки, с берега, подводную;</li>
+                    <li>Поплавочную, с донной удочкой, со спинингом, нахлыстом, жерлицей.</li>
+                  </ul>
+                  <p class="bold-b">Сроки, способы и орудия рыбалки определяются в соответствии с «Правилами охоты и рыболовства» от 26 июня 2014 года (Указ Президента РБ №551 от 25.12.2013 г.)</p>
+                  <p class="bold-b"><b>Гости EUROPARK размещаются с полным пансионом (проживание и питание) на базе отдыха ” Диканька”</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Description Trek -->
+        <!-- Google map trek. Go to Google Maps, choose walking trail and share with iframe -->
+        <div class="row margin-leftright-null grey-background">
+          <div class="bg-img overlay simple-parallax responsive" style="background-image:url(assets/img/trip2.jpg)">
+            <div class="container">
+              <div class="col-md-12 text padding-bottom-null text-center">
+                <h2 class="margin-bottom-null title line center color_white">Организация рыбалки</h2>
+                <p class="heading center grey margin-bottom-null color_white">Приехав на рыбалку в EUROPARK, Вы сможете всецело отдаться любимому занятию, потому что все организационно-бытовые хлопоты мы возьмем на себя. По вашему желанию мы готовы:</p>
+              </div>
+              <!-- Trek data -->
+              <div class="text trek-data text-center" id="p1">
+                <div class="col-md-1"></div>
+                <div class="col-sm-4 col-md-2">
+                  <i class="icon ion-clipboard service white"></i>
+                  <em class="color">Помочь в оформлении и получении путевок, разовых разрешений на право участия в рыбалке</em>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <i class="icon ion-map service white"></i>
+                  <em class="color">Подготовить места проведения рыбалки</em>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <i class="icon ion-ios-paw service white"></i>
+                  <em class="color">Оказать услуги егерской службы</em>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <i class="icon ion-android-microphone service white"></i>
+                  <em class="color">Предоставить связь</em>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <i class="icon ion-android-car service white"></i>
+                  <em class="color">Обеспечить транспортное сообщение</em>
+                </div>
+                <div class="col-md-1"></div>
+                <div style="clear: both;"></div>
+              </div>
+              <!-- END Trek data -->
+            </div>
+          </div>
+        </div>
+        <div class="row margin-leftright-null">
+          <div class="container">
+            <div class="col-md-12 text padding-bottom-null text-center">
+              <h2 class="margin-bottom-null title line center">ПРОВЕДЕНИЕ РЫБАЛКИ</h2>
+              <a href="#" class="add_photo calenar">Календарь</a>
+            </div>
+            <!-- About -->
+            <div class="col-lg-6 padding-leftright-null">
+              <div data-responsive="parent-height" data-responsive-id="adv" class="text padding-lg-bottom-null">
+                <div class="padding-onlytop-md">
+                  <p class="bold-b">Хозяйство EUROPARK предлагает рыбалку на следующие виды рыб: <b>сом, судак, щука, окунь, лещ, угорь, красноперка, плотва, язь, густера, ёрш, голавль, селява и жерех</b></p>
+                  <p class="bold-b">Отведать улов можно прямо в хозяйстве: наши профессиональные повара позаботятся о чистке и потрошении рыбы и приготовят блюда по вашему желанию. Также возможна заморозка улова для дальнейшей транспортировки.</p>
+                </div>
+              </div>
+            </div>
+            <!-- END About -->
+            <div class="col-lg-6 padding-leftright-null">
+              <div data-responsive="parent-height" data-responsive-id="adv" class="text padding-lg-bottom-null">
+                <div class="padding-onlytop-md">
+                  <p style="margin-bottom: 16px!important;" class="bold-b">С целью создания идеальных условий для рыбалки, мы готовы <b>предоставить услуги квалифицированных егерей</b> и дать в аренду:</p>
+                  <ul class="proved">
+                    <li>Транспортные средства (на территории хозяйства хорошо развита дорожная сеть!):</li>
+                    <li class="li-left">автомобили (УАЗ);</li>
+                    <li class="li-left">квадроциклы;</li>
+                    <li class="li-left">снегоходы;</li>
+                    <li class="li-left">моторные лодки;</li>
+                    <li>Cпиннинги;</li>
+                    <li>Удочки;</li>
+                    <li>Радиостанции;</li>
+                    <li>Возможно, какие-то еще рыболовные снасти??</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="show-price">Ознакомиться с прайсом</a>
+        </div>
+        <div class="row margin-leftright-null grey-background">
+          <div class="container">
+            <div class="col-md-12 text padding-bottom-null text-center">
+              <h2 class="margin-bottom-null title line center">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+              <p class="heading center grey margin-bottom-null"></p>
+            </div>
+            <div style="clear: both;"></div>
+            <p class="dopd text"> Мы рады принимать в хозяйстве EUROPARK иностранных гостей. Нам приятно освобождать Вас от забот, связанных с приездом в другую страну и создавать для Вас максимально комфортные условия. Поэтому мы с удовольствием берем на себя следующие организационные моменты:</p>
+            <!-- Trek Data -->
+            <div class="text padding-bottom-null trek-data text-center">
+              <div class="col-sm-3 col-md-3">
+                <i class="icon ion-ios-printer-outline service  letsize"></i>
+                <em class="em1">Подготовка документов на получение визы и страховки</em>
+              </div>
+              <div class="col-sm-3 col-md-3">
+                <i class="icon ion-ios-navigate-outline service  letsize"></i>
+                <em class="em1">Встреча и сопровождение (можно от границ РФ)</em>
+              </div>
+              <div class="col-sm-3 col-md-3">
+                <i class="icon ion-ios-shuffle service  letsize"></i>
+                <em class="em1">Трансфер Минск (аэропорт/вокзал) — охотхозяйство — Минск (аэропорт/вокзал)</em>
+              </div>
+              <div class="col-sm-3 col-md-3">
+                <i class="icon ion-ios-flask-outline service  letsize"></i>
+                <em class="em1">Услуги переводчика</em>
+              </div>
+            </div>
+            <!-- END Trek Data -->
+            <div class="col-md-12 text">
+              <p class="way">Кроме выше перечисленных услуг , мы предлагаем эксклюзивные программы , которые проводят опытные охотники на территории наших угодий:</p>
+              <ul class="seeul">
+                <li>Недельный курс молодого охотника с изучением этики и культуры поведения в лесу, основ безопасности , поиска и выслеживания добычи</li>
+                <li>Индивидуальные , групповые туры- охоты, как для начинающих охотников, так и для опытных, желающих добыть достойный трофей</li>
+                <li>Школу лесного выживания для подростков и людей, которые просто хотят научиться ориентироваться и выживать в диких природных условиях</li>
+              </ul>
+              <a href="#" class="show-price">Ознакомиться с прайсом</a>
+            </div>
+          </div>
+        </div>
+        <div id="page-wrap" class="content-section fullpage-wrap">
+          <div class="container">
+            <div class="col-md-12 text padding-bottom-null text-center mb60">
+              <h2 class="margin-bottom-null title line center">Фотогалерея</h2>
+              <p class="heading center grey margin-bottom-null"></p>
+            </div>
+          </div>
+          <!--  Gallery Section  -->
+          <section id="gallery" data-isotope="load-simple">
+            <div class="masonry-items equal four-columns" style="position: relative; height: 600px;">
+              <!--  Lightbox trek -->
+              <div class="one-item" style="position: absolute; left: 0px; top: 0px;">
+                <div class="image-bg" style="background-image:url(assets/img/trip1.jpg)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-camera"></i>
+                  <a href="assets/img/trip1.jpg" class="link lightbox"></a>
+                </div>
+              </div>
+              <!--  END Lightbox trek -->
+              <!--  Page Trek  -->
+              <div class="one-item" style="position: absolute; left: 476px; top: 0px;">
+                <div class="image-bg" style="background-image:url(assets/img/trip2.jpg)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-distance"></i>
+                  <a href="single-trek.html" class="link"></a>
+                </div>
+              </div>
+              <!--  END Page Trek  -->
+              <div class="one-item" style="position: absolute; left: 952px; top: 0px;">
+                <div class="image-bg" style="background-image:url(assets/img/trip3.jpg)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-camera"></i>
+                  <a href="assets/img/trip3.jpg" class="link lightbox"></a>
+                </div>
+              </div>
+              <div class="one-item" style="position: absolute; left: 1428px; top: 0px;">
+                <div class="image-bg" style="background-image:url(assets/img/trip4.jpg)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-distance"></i>
+                  <a href="single-trek-2.html" class="link"></a>
+                </div>
+              </div>
+              <div class="one-item" style="position: absolute; left: 0px; top: 300px;">
+                <div class="image-bg" style="background-image:url(assets/img/trip5.jpg)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-camera"></i>
+                  <a href="assets/img/trip5.jpg" class="link lightbox"></a>
+                </div>
+              </div>
+              <div class="one-item" style="position: absolute; left: 476px; top: 300px;">
+                <div class="image-bg" style="background-image:url(assets/img/trip6.jpg)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-camera"></i>
+                  <a href="assets/img/trip6.jpg" class="link lightbox"></a>
+                </div>
+              </div>
+              <div class="one-item" style="position: absolute; left: 952px; top: 300px;">
+                <div class="image-bg" style="background-image:url(assets/img/trip7.jpg)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-distance"></i>
+                  <a href="single-trek-2.html" class="link"></a>
+                </div>
+              </div>
+              <div class="one-item" style="position: absolute; left: 1428px; top: 300px;">
+                <div class="image-bg" style="background-image:url(assets/img/trip8.jpg)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-camera"></i>
+                  <a href="assets/img/trip8.jpg" class="link lightbox"></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--  END Gallery Section  -->
+        </div>
+        <div id="share">
+          <a class="share-btn">
+            <i class="icon ion-android-share-alt"></i>
+          </a>
+          <div class="share-icons" style="display:none">
+            <a href="" class="share-google">
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </a>
+            <a href="" class="share-twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="" class="share-linkedin">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="" class="share-mail">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <!--  END Share Btn  -->
+        <!-- Similar Trips -->
+        <!-- END Similar Trips -->
+        <!-- Call to Action -->
+        <div class="row text margin-leftright-null color-background">
+          <div class="col-md-12 text-center">
+            <h4 class="big white moby">Остались вопросы?</h4>
+            <h4 class="big margin-bottom-small white moby1">Свяжитесь с нами <a href="" class="btn-pro simple white moby2">+375 (29) 506-47-07</a></h4>
+            <a href="#" target="_blank" class="btn-alt small white margin-null active shadow moby3">Контакты</a>
+          </div>
+        </div>
+        <!-- END Call to Action -->
+      </div>
+    </div>
+    <!--  END Page Content, class footer-fixed if footer is fixed  -->
+    <!--  Footer. Class fixed for fixed footer  -->
+    <footer class="fixed full-width">
+      <div class="container">
+        <div class="row no-margin">
+          <div class="col-sm-4 col-md-4 padding-leftright-null">
+            <h6 class="heading white margin-bottom-extrasmall">EUROPARK</h6>
+            <p class="footer-p">Хозяйство расположено в краю голубых озер ― на севере Витебской области ― и граничит с территорией России. Угодья нашего охотничье-туристического комплекса занимают площадь в 18 тысяч гектар. Здесь лесной массив перемежается с живописными полями, болотистыми участками, поросшими камышом, и водной гладью озер и рек.</p>
+          </div>
+          <div class="col-sm-4 col-md-4 padding-leftright-null">
+            <h6 class="heading white margin-bottom-extrasmall">Наши контакты</h6>
+            <ul class="info">
+              <li>Телефон: <a href=""> +375 (29) 297-61-21</a></li>
+              <li>Почта: <a href="">europark.by@gmail.com</a></li>
+              <li>Время работы: <span class="white">9:00 - 18:00</span>
+                <br>
+              </li>
+              <li><a href="">Республика Беларусь, Витебская область, Россонский район, д. Демех, ул.Ольховая 11<br>
                                   </a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 padding-leftright-null">
-                            <h6 class="heading white margin-bottom-extrasmall">Подписка на новости</h6>
-                            <p class="grey-light">Нижнедунайская равнина, несмотря на то, что в воскресенье некоторые станции метро закрыты, поднимает холодный действующий вулкан Катмаи.</p>
-                            <div id="newsletter-form" class="padding-onlytop-xs">
-                                <form class="search-form">
-                                    <div class="form-input">
-                                        <input type="text" placeholder="Укажите ваш e-mail">
-                                        <span class="form-button">
+            </ul>
+          </div>
+          <div class="col-md-4 padding-leftright-null">
+            <h6 class="heading white margin-bottom-extrasmall">Подписка на новости</h6>
+            <p class="grey-light">Нижнедунайская равнина, несмотря на то, что в воскресенье некоторые станции метро закрыты, поднимает холодный действующий вулкан Катмаи.</p>
+            <div id="newsletter-form" class="padding-onlytop-xs">
+              <form class="search-form">
+                <div class="form-input">
+                  <input type="text" placeholder="Укажите ваш e-mail">
+                  <span class="form-button">
                                             <button type="button">Подписаться</button>
                                         </span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="copy">
-                        <div class="row no-margin">
-                            <div class="col-md-8 padding-leftright-null">
-                                &copy; 2011-2017 Охотничье хозяйство EUROPARK 
-                            </div>
-                            <div class="col-md-4 padding-leftright-null">
-                                <ul class="social">
-                                    <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </footer>
-            <!--  END Footer. Class fixed for fixed footer  -->
+              </form>
+            </div>
+          </div>
         </div>
-        <!--  Main Wrap  -->
-        
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="assets/js/jquery.min.js"></script>
-        <!-- All js library -->
-        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.flexslider-min.js"></script>
-        <script src="assets/js/jquery.fullPage.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/isotope.min.js"></script>
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
-        <script src="assets/js/jquery.scrollTo.min.js"></script>
-        <script src="assets/js/smooth.scroll.min.js"></script>
-        <script src="assets/js/jquery.appear.js"></script>
-        <script src="assets/js/jquery.countTo.js"></script>
-        <script src="assets/js/jquery.scrolly.js"></script>
-        <script src="assets/js/plugins-scroll.js"></script>
-        <script src="assets/js/imagesloaded.min.js"></script>
-        <script src="assets/js/pace.min.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+        <div class="copy">
+          <div class="row no-margin">
+            <div class="col-md-8 padding-leftright-null">
+              &copy; 2011-2017 Охотничье хозяйство EUROPARK
+            </div>
+            <div class="col-md-4 padding-leftright-null">
+              <ul class="social">
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  END Footer. Class fixed for fixed footer  -->
+  </div>
+  <!--  Main Wrap  -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- All js library -->
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.flexslider-min.js"></script>
+  <script src="assets/js/jquery.fullPage.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+  <script src="assets/js/jquery.scrollTo.min.js"></script>
+  <script src="assets/js/smooth.scroll.min.js"></script>
+  <script src="assets/js/jquery.appear.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.scrolly.js"></script>
+  <script src="assets/js/plugins-scroll.js"></script>
+  <script src="assets/js/imagesloaded.min.js"></script>
+  <script src="assets/js/pace.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

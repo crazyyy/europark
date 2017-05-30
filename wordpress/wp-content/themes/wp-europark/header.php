@@ -22,27 +22,11 @@
 
 </head>
 <body <?php body_class(); ?>>
-  <header>
-    <img class="header-img" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg">
-    <div class="header-layer">
-      <div style="position: absolute; z-index: 0; top: 0px;" class="is_overlay">
-        <video autoplay="autoplay" loop="">
-          <source src="http://europark.by/wp-content/themes/oddel/img/Noch.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
 
-          <img class="header-img" src="<?php echo get_template_directory_uri(); ?>/img/Noch.jpg">
-        </video>
-      </div>
-      <div class="container wrapper">
-        <div class="row valign">
-          <div class="col-md-12 head_right_text">
-            <h1 class="white flex-animation main1">База отдыха</h1>
-            <section class="white flex-animation main2">Диканька</section>
-            <p class="heading white inpage-two main3">Нижнедунайская равнина, несмотря на то, что в воскресенье некоторые станции метро закрыты, поднимает холодный действующий вулкан Катмаи.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  <?php if (is_page('101')) { ?>
+    <?php get_template_part('include-header'); ?>
+  <?php }; ?>
+
   <!--  loader  -->
   <div id="myloader">
     <span class="loader">
@@ -57,28 +41,30 @@
         <nav class="navbar navbar-default white">
           <!--  Header Logo  -->
           <div id="logo">
-            <a class="navbar-brand" href="index.html">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="normal" alt="logo">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo@2x.png" class="retina" alt="logo">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white.png" class="normal white-logo" alt="logo">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white@2x.png" class="retina white-logo" alt="logo">
-            </a>
+            <?php query_posts("page_id=101"); ?>
+              <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                  <?php $image = get_field('logo'); if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" class="normal" alt="logo">
+                  <?php endif; ?>
+                  <?php $image = get_field('logo2x'); if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" class="retina" alt="logo">
+                  <?php endif; ?>
+                  <?php $image = get_field('logo_white'); if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" class="normal white-logo" alt="logo">
+                  <?php endif; ?>
+                  <?php $image = get_field('logo_white2x'); if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" class="retina white-logo" alt="logo">
+                  <?php endif; ?>
+                </a>
+              <?php endwhile; endif; ?>
+            <?php wp_reset_query(); ?>
           </div>
           <!--  END Header Logo  -->
           <!--  Classic menu, responsive menu classic  -->
           <div id="menu-classic">
             <div class="menu-holder">
-              <ul>
-                <li class="submenu"><a href="/index.html" class="active-item">Главная</a></li>
-                <li class="submenu"> <a href="/hunting.html">Охота</a> </li>
-                <li class="submenu"> <a href="/fishing.html">Рыбалка</a> </li>
-                <li class="submenu"> <a href="/about-the-base.html">База отдыха</a> </li>
-                <li class="submenu"> <a href="/about-us.html">О нас</a> </li>
-                <li class="submenu"> <a href="/gallery-filters.html">Галерея</a> </li>
-                <li class="submenu"> <a href="/price.html">Прайс</a> </li>
-                <li class="submenu"> <a href="/contact-1.html">Контакты</a> </li>
-                <!-- Search Icon -->
-              </ul>
+              <?php wpeHeadNav(); ?>
             </div>
           </div>
           <!--  END Classic menu, responsive menu classic  -->
@@ -112,3 +98,4 @@
       </div>
     </header>
     <!--  END Header & Menu  -->
+

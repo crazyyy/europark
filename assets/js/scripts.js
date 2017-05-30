@@ -613,3 +613,16 @@ $(document).ready(function($) {
 
   }
 });
+
+$(function() {
+  $('.headnav > li').each(function(index, el) {
+    $(this).addClass('submenu');
+  });
+  $('.headnav .current-menu-item').each(function(index, el) {
+    $(this).find('a').addClass('active-item');
+    $(this).removeClass('current-menu-item');
+  });
+});
+
+
+

@@ -215,6 +215,9 @@ function wpeExcerpt20($length) {
 function wpeExcerpt40($length) {
   return 40;
 }
+function wpeExcerpt200($length) {
+  return 200;
+}
 //  Create the Custom Excerpts callback
 //  RU: Собственная обрезка контента
 function wpeExcerpt($length_callback = '', $more_callback = '') {
@@ -749,9 +752,214 @@ function disable_emojicons_tinymce( $plugins ) {
   }
 }
 
+add_action( 'init', 'post_type_success' );
+function post_type_success() {
+  $labels = array(
+    'name'=> 'Успехи',
+    'singular_name' => 'Успехи',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent',
+  );
 
+  $args = array(
+    'labels' => $labels,
+    'description' => 'Успехи',
+    'public' => true,
+    'exclude_from_search' => true,
+    'show_ui' => true,
+    'menu_position' => 3,
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-images-alt',
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'rewrite' => array( 'slug' => 'success' ),
+    'show_in_rest' => true
+  );
+  register_post_type( 'success' , $args );
+}
 
+add_action( 'init', 'post_type_services' );
+function post_type_services() {
+  $labels = array(
+    'name'=> 'Услуги',
+    'singular_name' => 'Услуги',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent',
+  );
 
+  $args = array(
+    'labels' => $labels,
+    'description' => 'Услуги',
+    'public' => true,
+    'exclude_from_search' => true,
+    'show_ui' => true,
+    'menu_position' => 3,
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-cart',
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'rewrite' => array( 'slug' => 'services' ),
+    'show_in_rest' => true
+  );
+  register_post_type( 'services' , $args );
+}
+
+add_action( 'init', 'taxonomies_category', 0 );
+function taxonomies_category() {
+  // Add new taxonomy, make it hierarchical (like categories)
+  $labels = array(
+    'name'              => 'Categories',
+    'singular_name'     => 'Category',
+    'search_items'      => 'Search',
+    'all_items'         => 'All',
+    'parent_item'       => 'Parent',
+    'parent_item_colon' => 'Parent',
+    'edit_item'         => 'Edit',
+    'update_item'       => 'Update',
+    'add_new_item'      => 'Add',
+    'new_item_name'     => 'Add',
+    'menu_name'         => 'Categories',
+  );
+
+  $args = array(
+    'hierarchical'      => true,
+    'labels'            => $labels,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'rewrite'           => array( 'slug' => 'categories' ),
+  );
+
+  register_taxonomy( 'categories', array( 'services' ), $args );
+}
+
+add_action( 'init', 'post_type_reviews' );
+function post_type_reviews() {
+  $labels = array(
+    'name'=> 'Отзывы',
+    'singular_name' => 'Отзывы',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent',
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'description' => 'Отзывы',
+    'public' => true,
+    'exclude_from_search' => true,
+    'show_ui' => true,
+    'menu_position' => 3,
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-star-half',
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'rewrite' => array( 'slug' => 'reviews' ),
+    'show_in_rest' => true
+  );
+  register_post_type( 'reviews' , $args );
+}
+
+add_action( 'init', 'post_type_team' );
+function post_type_team() {
+  $labels = array(
+    'name'=> 'Команда',
+    'singular_name' => 'Команда',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent',
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'description' => 'Команда',
+    'public' => true,
+    'exclude_from_search' => true,
+    'show_ui' => true,
+    'menu_position' => 3,
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-groups',
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'rewrite' => array( 'slug' => 'team' ),
+    'show_in_rest' => true
+  );
+  register_post_type( 'team' , $args );
+}
+
+add_action( 'init', 'post_type_partners' );
+function post_type_partners() {
+  $labels = array(
+    'name'=> 'Партнеры',
+    'singular_name' => 'Партнеры',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent',
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'description' => 'Партнеры',
+    'public' => true,
+    'exclude_from_search' => true,
+    'show_ui' => true,
+    'menu_position' => 3,
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-smiley',
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'rewrite' => array( 'slug' => 'partners' ),
+    'show_in_rest' => true
+  );
+  register_post_type( 'partners' , $args );
+}
 
 
 
