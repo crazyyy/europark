@@ -240,7 +240,7 @@
             <?php foreach( $posts as $post): ?>
               <?php setup_postdata($post); ?>
                 <div class="item">
-                  <img class="center" src="<?php the_post_thumbnail_url(); ?>" alt="?php the_title(); ?>">
+                  <img class="center" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                 </div>
                 <?php endforeach; ?>
               <?php wp_reset_postdata(); ?>
