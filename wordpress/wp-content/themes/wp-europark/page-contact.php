@@ -48,28 +48,7 @@
           <div class="col-md-6 padding-leftright-null">
             <div class="text padding-onlybottom-sm padding-md-top-null">
               <p class="sent-us">Напишите нам</p>
-              <form id="contact-form" class="padding-onlytop-md padding-md-topbottom-null">
-                <div class="row">
-                  <div class="col-md-12">
-                    <input class="form-field" name="name" id="name" type="text" placeholder="Ваше имя">
-                  </div>
-                  <div class="col-md-12">
-                    <input class="form-field" name="mail" id="mail" type="text" placeholder="Ваш email">
-                  </div>
-                  <div class="col-md-12">
-                    <input class="form-field" name="subjectForm" id="subjectForm" type="text" placeholder="Тема">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <textarea class="form-field" name="messageForm" id="messageForm" rows="6" placeholder="Ваше сообщение"></textarea>
-                    <div class="submit-area padding-onlytop-sm">
-                      <input type="submit" id="submit-contact" class="btn-alt" value="Отправить">
-                      <div id="msg" class="message"></div>
-                    </div>
-                  </div>
-                </div>
-              </form>
+              <?php echo do_shortcode('[contact-form-7 id="30" title="Contact Form" html_id="contact-form" html_class="padding-onlytop-md padding-md-topbottom-null"]'); ?>
             </div>
           </div>
           <!--  END Input Form  -->

@@ -36,52 +36,47 @@
       <!--  Gallery Section  -->
       <section id="gallery" data-isotope="load-simple">
         <div class="masonry-items equal three-columns">
+
           <!--  Lightbox trek -->
-          <div class="one-item mountain adventure">
-            <div class="image-bg" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/trip1.jpg)"></div>
-            <div class="content figure">
-              <i class="pd-icon-camera"></i>
-              <a href="<?php echo get_template_directory_uri(); ?>/img/trip1.jpg" class="link lightbox"></a>
-            </div>
-          </div>
+          <?php $images = get_field('gallery', 113); if( $images ): ?>
+            <?php foreach( $images as $image ): ?>
+              <div class="one-item mountain adventure">
+                <div class="image-bg" style="background-image:url(<?php echo $image['sizes']['thumbnail']; ?>)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-camera"></i>
+                  <a href="<?php echo $image['sizes']['full']; ?>" class="link lightbox"></a>
+                </div>
+              </div>
+            <?php endforeach; ?>
+          <?php endif; ?>
           <!--  END Lightbox trek -->
-          <!--  Page Trek  -->
-          <div class="one-item mountain nature">
-            <div class="image-bg" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/trip2.jpg)"></div>
-            <div class="content figure">
-              <i class="pd-icon-distance"></i>
-              <a href="single-trek.html" class="link"></a>
-            </div>
-          </div>
-          <!--  END Page Trek  -->
-          <div class="one-item nature">
-            <div class="image-bg" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/trip3.jpg)"></div>
-            <div class="content figure">
-              <i class="pd-icon-camera"></i>
-              <a href="<?php echo get_template_directory_uri(); ?>/img/trip3.jpg" class="link lightbox"></a>
-            </div>
-          </div>
-          <div class="one-item nature adventure">
-            <div class="image-bg" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/trip4.jpg)"></div>
-            <div class="content figure">
-              <i class="pd-icon-distance"></i>
-              <a href="single-trek-2.html" class="link"></a>
-            </div>
-          </div>
-          <div class="one-item adventure">
-            <div class="image-bg" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/trip5.jpg)"></div>
-            <div class="content figure">
-              <i class="pd-icon-camera"></i>
-              <a href="<?php echo get_template_directory_uri(); ?>/img/trip5.jpg" class="link lightbox"></a>
-            </div>
-          </div>
-          <div class="one-item lake nature">
-            <div class="image-bg" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/trip6.jpg)"></div>
-            <div class="content figure">
-              <i class="pd-icon-camera"></i>
-              <a href="<?php echo get_template_directory_uri(); ?>/img/trip6.jpg" class="link lightbox"></a>
-            </div>
-          </div>
+          <!--  Lightbox trek -->
+          <?php $images = get_field('gallery', 111); if( $images ): ?>
+            <?php foreach( $images as $image ): ?>
+              <div class="one-item mountain nature">
+                <div class="image-bg" style="background-image:url(<?php echo $image['sizes']['thumbnail']; ?>)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-camera"></i>
+                  <a href="<?php echo $image['sizes']['full']; ?>" class="link lightbox"></a>
+                </div>
+              </div>
+            <?php endforeach; ?>
+          <?php endif; ?>
+          <!--  END Lightbox trek -->
+          <!--  Lightbox trek -->
+          <?php $images = get_field('gallery', 115); if( $images ): ?>
+            <?php foreach( $images as $image ): ?>
+              <div class="one-item mountain lake">
+                <div class="image-bg" style="background-image:url(<?php echo $image['sizes']['thumbnail']; ?>)"></div>
+                <div class="content figure">
+                  <i class="pd-icon-camera"></i>
+                  <a href="<?php echo $image['sizes']['full']; ?>" class="link lightbox"></a>
+                </div>
+              </div>
+            <?php endforeach; ?>
+          <?php endif; ?>
+          <!--  END Lightbox trek -->
+
         </div>
       </section>
       <!--  END Gallery Section  -->
