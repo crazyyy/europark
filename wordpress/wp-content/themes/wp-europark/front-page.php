@@ -74,7 +74,7 @@
             <?php foreach( $posts as $post): ?>
               <?php setup_postdata($post); ?>
                 <div class="item">
-                  <div class="image" style="background-image:url(<?php the_post_thumbnail_url(); ?>)" data-image="<?php the_post_thumbnail_url('full'); ?>"></div>
+                  <a class="image" rel="lightbox" href="<?php the_post_thumbnail_url('full'); ?>" style="background-image:url(<?php the_post_thumbnail_url(); ?>)" data-image="<?php the_post_thumbnail_url('full'); ?>"></a>
                 </div>
               <?php endforeach; ?>
             <?php wp_reset_postdata(); ?>

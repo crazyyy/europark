@@ -296,24 +296,24 @@ var $ = jQuery.noConflict();
     closeBtnInside: false,
     fixedContentPos: true
   });
-  $('#gallery').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-      delegate: '.lightbox',
-      type: 'image',
-      fixedContentPos: true,
-      gallery: {
-        enabled: true
-      },
-      closeBtnInside: false
-    });
-  });
-  $('.lightbox-image').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
-    },
-    closeBtnInside: false
-  });
+  // $('#gallery').each(function() { // the containers for all your galleries
+  //   $(this).magnificPopup({
+  //     delegate: '.lightbox',
+  //     type: 'image',
+  //     fixedContentPos: true,
+  //     gallery: {
+  //       enabled: true
+  //     },
+  //     closeBtnInside: false
+  //   });
+  // });
+  // $('.lightbox-image').magnificPopup({
+  //   type: 'image',
+  //   gallery: {
+  //     enabled: true
+  //   },
+  //   closeBtnInside: false
+  // });
   /*-------------------------------------------------*/
   /* =  Share
   /*-------------------------------------------------*/

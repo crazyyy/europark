@@ -190,7 +190,7 @@
                   <div class="image-bg" style="background-image:url(<?php echo $image['sizes']['thumbnail']; ?>)"></div>
                   <div class="content figure">
                     <i class="pd-icon-camera"></i>
-                    <a href="<?php echo $image['sizes']['full']; ?>" class="link lightbox"></a>
+                    <a href="<?php echo $image['sizes']['large']; ?>" rel="lightbox" class="link lightbox"></a>
                   </div>
                 </div>
                 <!--  END Lightbox trek -->
